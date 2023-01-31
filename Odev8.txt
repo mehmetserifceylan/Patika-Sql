@@ -1,0 +1,28 @@
+1-test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), 
+birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+-- create table employee(
+-- 	id serial primary key, 
+-- 	name varchar(50) not null,
+-- 	birthday date,
+-- 	email varchar(100));
+2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+-- insert into employee (name, birthday, email) values ('Sandye Ackenhead', '1933-05-08', 'sackenhead0@reverbnation.com');
+-- insert into employee (name, birthday, email) values ('Natty Baudino', '1960-06-04', 'nbaudino1@about.com');
+-- insert into employee (name, birthday, email) values ('Teodor Vieyra', '1936-12-03', 'tvieyra2@youtube.com');
+-- insert into employee (name, birthday, email) values ('Carolyn Camsey', '1932-08-05', 'ccamsey3@google.com.au');
+-- insert into employee (name, birthday, email) values ('Rodie Softley', '1972-05-11', 'rsoftley4@tripod.com');
+-- insert into employee (name, birthday, email) values ('Monte Gommes', '1954-07-07', 'mgommes5@netvibes.com');
+-- insert into employee (name, birthday, email) values ('Sella Jordi', '1922-05-31', 'sjordi6@wikipedia.org');
+-- insert into employee (name, birthday, email) values ('Eal Fuge', '1972-06-20', 'efuge7@dedecms.com');
+-- insert into employee (name, birthday, email) values ('Lawton Flanne', '1972-08-25', 'lflanne8@ucla.edu');
+-- insert into employee (name, birthday, email) values ('Rossy Coyett', '1944-11-10', 'rcoyett9@vk.com');
+
+3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+--update employee set name='Emine yıldız' where name like 'R%' returning *
+
+4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+--delete from employee where name='Emine yıldız' returning *
